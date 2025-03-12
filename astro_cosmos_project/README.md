@@ -13,8 +13,8 @@ For this use case, we're mounting the code via the `docker-compose.override.yml`
 Your Astro project contains the following files and folders:
 
 - dags: This folder contains the Python files for your Airflow DAGs. By default, it includes three example DAGs demonstrating how to use Cosmos with dbt:
-  - `cosmos_postgres.py`: A simple Cosmos dbt DAG that runs a dbt project located inside your Astro project folder.
-  - `cosmos_databricks.py` & `cosmos_bigquery.py`: Examples of Cosmos dbt DAGs where the dbt project is located outside your Astro project. The dbt project may be in the same repository or a completely separate one.
+  - `cosmos_bigquery.py`: A simple Cosmos dbt DAG that runs a dbt project located inside your Astro project folder.
+  - `cosmos_databricks.py` & `cosmos_postgres.py`: Examples of Cosmos dbt DAGs where the dbt project is located outside your Astro project. The dbt project may be in the same repository or a completely separate one.
 - Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
 - include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
 - packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
